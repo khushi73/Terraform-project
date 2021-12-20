@@ -138,8 +138,9 @@ user_data = <<-EOF
     #ttl = "300"
     #records = {aws_eip.one.public_ip}
 #}
- #output "name_server" {
-  #  value = aws_route53_zone.myterra.name_server
-  #}
+# below line is wrong
+output "name_server" {
+  value = aws_route53_zone.myterra.name_server
+}
 }
 
