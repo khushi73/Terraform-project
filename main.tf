@@ -134,7 +134,7 @@ user_data = <<-EOF
  # resource "aws_route53_record" "www"{
   #  zone_id = aws_route53_zone.myterra.id 
    # name = "www.myterra.in"
-   #type = "A"
+######   #type = "A"
     #ttl = "300"
     #records = {aws_eip.one.public_ip}
 #}
