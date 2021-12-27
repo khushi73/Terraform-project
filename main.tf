@@ -28,7 +28,7 @@ resource "aws_route_table" "prod-rt" {
   
   }
   tags = {
-    "name" = "prort"
+    "name" = "port"
   }
   }
 #4.create Subnet
@@ -134,12 +134,14 @@ user_data = <<-EOF
  # resource "aws_route53_record" "www"{
   #  zone_id = aws_route53_zone.myterra.id 
    # name = "www.myterra.in"
-   #type = "A"
+######   #type = "A"
     #ttl = "300"
     #records = {aws_eip.one.public_ip}
 #}
+
 output "name_server" {
   #  value = aws_route53_zone.myterra.name_server
   #}
+
 }
 
