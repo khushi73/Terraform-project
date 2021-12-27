@@ -28,7 +28,7 @@ resource "aws_route_table" "prod-rt" {
   
   }
   tags = {
-    "name" = "prort"
+    "name" = "port"
   }
   }
 #4.create Subnet
